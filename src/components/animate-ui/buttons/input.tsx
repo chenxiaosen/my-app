@@ -118,7 +118,9 @@ function InputButtonSubmit({
         showInput ? "px-4" : "aspect-square",
         className
       )}
-      onClick={() => setShowInput((prev) => !prev)}
+      onClick={() => {
+        if (!showInput) setShowInput(true);
+      }}
       {...props}
     >
       {showInput ? (

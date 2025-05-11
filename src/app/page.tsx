@@ -11,11 +11,11 @@ export default function Page() {
   return (
     <StarsBackground className="absolute inset-0 flex items-center justify-center">
       <InputButtonProvider>
-        <InputButton>
+        <InputButton className="w-2xs">
           <InputButtonAction>和陈晓森聊一聊</InputButtonAction>
           <InputButtonSubmit>Sent</InputButtonSubmit>
         </InputButton>
-        <InputButtonInput placeholder="问点什么..." />
+        <InputButtonInput placeholder="聊点什么..." />
       </InputButtonProvider>
     </StarsBackground>
   );
